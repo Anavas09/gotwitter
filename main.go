@@ -1,4 +1,4 @@
-package gotwitter
+package main
 
 func main() {
 
