@@ -16,7 +16,7 @@ func GenerateJWT(u models.User) (string, error) {
 		"name":      u.Name,
 		"lastname":  u.Lastname,
 		"birthday":  u.Birthday,
-		"ubication": u.Ubication,
+		"location":  u.Location,
 		"biography": u.Biography,
 		"website":   u.Website,
 		"_id":       u.ID.Hex(),
