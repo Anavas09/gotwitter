@@ -1,3 +1,11 @@
 debug.log
 go.sum
 main.exe
+
+#Images. Avatars and banners
+uploads/avatars/*.jpg
+uploads/avatars/*.png
+uploads/avatars/*.bmt
+uploads/banners/*.jpg
+uploads/banners/*.png
+uploads/banners/*.bmt
