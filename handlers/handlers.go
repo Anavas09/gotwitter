@@ -37,6 +37,11 @@ func Handlers() {
 
 	//Relations (following)
 	router.HandleFunc("/addRelation", middlewares.CheckDB(middlewares.ValidateJWT(routers.AddRelation))).Methods("POST")
+	router.HandleFunc("/deleteRelation", middlewares.CheckDB(middlewares.ValidateJWT(routers.DeleteRelation))).Methods("DELETE")
+	router.HandleFunc("/getRelation", middlewares.CheckDB(middlewares.ValidateJWT(routers.GetRelation))).Methods("GET")
+
+	//Users
+	router.HandleFunc("/listUsers", middlewares.CheckDB(middlewares.ValidateJWT(routers.ListUsers))).Methods("GET")
 
 	PORT := os.Getenv("PORT")
 
